@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>avance 5 - UPC</H2>
+<h2>Universidad Privada Cumbre</H2     
+<p>Bienvenido Christian</p>
+<h1>Christian Andres Parra Romero - 9604087</H1>
+
+<p>1.- Mostrar los  Numeros hasta N usando FOR</p>    
+<button onclick="mostrarParesDeN_FOR()">mostrarParesDeN_FOR</button>
+
+<p>2.- contar los pares de un Numero usando FOR</p>    
+<button onclick="contarNumero_For()">contarNumero_For</button>
+
+<p>3.- contar los numeros hasta N usando WHILE</p>    
+<button onclick="ContarNumero_WHILE()">ContarNumero_WHILE</button>
+
+<p>4.- mostrar solo los pares de un numero WHILE</p>    
+<button onclick="mostrarSoloParesDeN()">mostrarSoloParesDeN</button>
+
+<p>5.- mostrar numeros pares impares de N</p>    
+<button onclick="mostrarNumeroParesImparesDeN()">mostrarNumeroParesImparesDeN</button>
+
+<p>6.- factorialNumero</p>    
+<button onclick="factorialNumero()">factorialNumero</button>
+
+<p>7.- Verificar si un numero es Par o Impar</p>    
+<button onclick="esPar()">esPar</button>
+
+<p>8.- condicional Compuesta</p>    
+<button onclick="condicionalCompuesta()">condicionalCompuesta</button>
+
+<p>9.- condicional Compuesta</p>    
+<button onclick="condicionalCompuesta_AND()">condicionalCompuesta_AND</button>
+
+
+<br><br><br><br>
+
+
+<script>
+
+//IF COMPUESTO
+function condicionalCompuesta_AND(){
+     if(((10 > 5 )  && (7 == 8)) && ((5==5))){
+          alert("TRUE")
+      }else{
+          alert("FALSE")
+     }
+
+
+
+}
+
+
+
+function condicionalCompuesta(){
+      
+     if(((10 > 5 )  && ((7 ==7))){
+          alert("TRUE")
+      }else{
+          alert("FALSE")
+     }
+
+
+
+}
+
+//OF ANIMADO
+
+
+
+
+
+
+
+function mostrarParesDeN_FOR(){
+
+     var numero = 16
+     for (var i = 1; i <= numero; i++){
+         if(i % 2 ==0){
+             alert(i)
+         }else{
+             //no hacer nada
+         }
+     }
+}
+
+
+function contarNumero_For(){
+
+     var numero = 5
+     for (var i = 1; i <= numero; i++){
+
+          alert(i)
+     }
+}
+
+
+function ContarNumero_WHILE(){
+
+     var numero = 5
+     var i = 1
+     while(i <= numero){
+
+          alert(i)
+         i = i + 1
+     }
+}
+
+
+function mostrarSoloParesDeN(){
+
+     var numero = 15
+     var i = 1
+     while(i <= numero){
+
+          if(i % 2 == 0){
+            alert(i + " Es PAR")
+           }else{
+            //No hacer nada
+          }
+         i = i + i
+     }
+       alert("FIN")
+}
+
+
+function mostrarNumeroParesImparesDeN(){
+     var numero = 7
+     var i = 1
+     
+     while(i <= numero){
+          if(i % 2 == 0){
+            alert(i+ " Es PAR")
+           }else{
+             alert(i + " No es PAR")
+          }
+       i = i + 1
+     } 
+     alert("FIN")
+}
+
+
+
+function factorialNumero(){
+     var numero = 5
+     var i = 1
+     var resultado = 1
+     while(i <= numero){
+        resultado = resultado * i
+        i = i +1     
+     }
+     alert("El factorial de " + numero + " es : " + resultado)
+}
+
+
+function esPar(){
+var numero = 18
+      if(numero % 2 == 0){
+       alert(numero + "Es PAR ")
+     }else{
+      alert(numero + " No es PAR")
+    }
+}
+</Script>
+</body>
+</html>
